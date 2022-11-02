@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html
+    data-console-log-level="<%-htmlWebpackPlugin.options.consoleLogLevel%>"
+    data-io-log-level="<%-htmlWebpackPlugin.options.ioLogLevel%>"
+    style="background: <%-htmlWebpackPlugin.options.backgroundColor%>; color: <%-htmlWebpackPlugin.options.color%>;"
+    lang="en-US"
+>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Quadrant Health Acquired Conditions App </title>
+        <link
+            rel="icon"
+            type="image/png"
+            href="<%-htmlWebpackPlugin.options.extStyle[0].file%>"
+            crossorigin="<%= webpackConfig.output.crossOriginLoading %>"
+            integrity="<%= htmlWebpackPlugin.options.extStyle[0].integrity %>"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="<%-htmlWebpackPlugin.options.extStyle[1].file%>"
+            crossorigin="<%= webpackConfig.output.crossOriginLoading %>"
+            integrity="<%= htmlWebpackPlugin.options.extStyle[1].integrity %>"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="<%-htmlWebpackPlugin.options.extStyle[2].file%>"
+            crossorigin="<%= webpackConfig.output.crossOriginLoading %>"
+            integrity="<%= htmlWebpackPlugin.options.extStyle[2].integrity %>"
+        />
+        <link
+            href="<%=htmlWebpackPlugin.files.css[0]%>"
+            rel="stylesheet"
+            type="text/css"
+            crossorigin="<%= webpackConfig.output.crossOriginLoading %>"
+            <% if (!!htmlWebpackPlugin.files.jsIntegrity) { %>
+                integrity="<%= htmlWebpackPlugin.files.cssIntegrity[0] %>"
+            <% } %>
+        />
+        <link
+            href="<%=htmlWebpackPlugin.files.css[1]%>"
+            rel="stylesheet"
+            type="text/css"
+            crossorigin="<%= webpackConfig.output.crossOriginLoading %>"
+            <% if (!!htmlWebpackPlugin.files.jsIntegrity) { %>
+                integrity="<%= htmlWebpackPlugin.files.cssIntegrity[1] %>"
+            <% } %>
+        />
+    </head>
+    <body>
+        <div id="port"></div>
+        <div data-app-version="<%-APP_VERSION%>" data-build-date="<%-(new Date()).toISOString()%>" id="app"></div>
+        <script
+            src="<%=htmlWebpackPlugin.files.js[1]%>"
+            crossorigin="<%= webpackConfig.output.crossOriginLoading %>"
+            <% if (!!htmlWebpackPlugin.files.jsIntegrity) { %>
+                integrity="<%=htmlWebpackPlugin.files.jsIntegrity[1]%>"
+            <% } %>
+        ></script>
+        <script
+            src="<%=htmlWebpackPlugin.files.js[0]%>"
+            crossorigin="<%= webpackConfig.output.crossOriginLoading %>"
+            <% if (!!htmlWebpackPlugin.files.jsIntegrity) { %>
+                    integrity="<%=htmlWebpackPlugin.files.jsIntegrity[0]%>"
+            <% } %>
+        ></script>
+        <script
+            src="<%=htmlWebpackPlugin.files.js[2]%>"
+            crossorigin="<%= webpackConfig.output.crossOriginLoading %>"
+            <% if (!!htmlWebpackPlugin.files.jsIntegrity) { %>
+                    integrity="<%=htmlWebpackPlugin.files.jsIntegrity[2]%>"
+            <% } %>
+        ></script>
+        <script
+            src="<%=htmlWebpackPlugin.files.js[3]%>"
+            crossorigin="<%= webpackConfig.output.crossOriginLoading %>"
+            <% if (!!htmlWebpackPlugin.files.jsIntegrity) { %>
+                    integrity="<%=htmlWebpackPlugin.files.jsIntegrity[3]%>"
+            <% } %>
+        ></script>
+        <script>
+            var cfg = {
+                launch: null,
+                total: 3,
+                "showSplashScreen" : true,
+                "splashScreenSelector" : {
+                    "type":"id",
+                    "value" : "splashscreen"
+                },
+                "splashScreenStyle" : {
+                    "background": "<%-htmlWebpackPlugin.options.backgroundColor%>",
+                    "color": "<%-htmlWebpackPlugin.options.color%>",
+                    "font-family": "Nunito Sans",
+                    "font-weight": 100,
+                },
+                "logo" : "/img/logo.png",
+                "name": "Acquired Conditions App"
+            };
+
+            interopion.splashscreen.init(cfg);
+            interopion.splashscreen.initProgressBar();
+        </script>
+    </body>
+</html>

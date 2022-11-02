@@ -1,0 +1,9 @@
+{
+    "186431008": { "code": "186431008", "display": "Infection caused by Clostridioides difficile (disorder)", "group": "CDIFF" },
+    "91302008": { "code": "91302008", "display": "Sepsis (disorder)", "group": "SEPSIS" },
+    "736152001": { "code": "736152001", "display": "Infection of bloodstream co-occurrent and due to central venous catheter in situ (disorder)", "group": "CLABSI" },
+    "718321009": { "code": "718321009", "display": "Stuttering Severity Instrument for Children and Adults score (observable entity)", "group": "SSI" },
+    "700372006": { "code": "700372006", "display": "Urinary tract infection associated with catheter (disorder)", "group": "CAUTI" },
+    "266096002": { "code": "266096002", "display": "Methicillin resistant Staphylococcus aureus infection (disorder)", "group": "MRSA" },
+    "1912002": { "code": "1912002", "display": "Fall (event)", "group": "FALL" }
+}

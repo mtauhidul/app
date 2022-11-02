@@ -1,0 +1,38 @@
+.content-frame {
+    display: flex;
+    width  : 100%;
+
+
+    .left-content {
+        width: 33%;
+        min-width: 300px;
+
+        .bordered {
+            border-right: "1px solid #CCC";
+        }
+    }
+
+    .right-content {
+        height   : 100%;
+        flex-grow: 1;
+        width: calc(2/3 * 100%);
+    }
+
+}
+
+@media screen and (max-width: 715px) {
+    .content-frame {
+        flex-direction: column;
+
+        .left-content, .right-content {
+            width: 100%;
+
+            .bordered {
+                border-right: 0;
+            }
+        }
+    }
+    .content-frame.reversed-column {
+        flex-direction: column-reverse;
+    }
+}

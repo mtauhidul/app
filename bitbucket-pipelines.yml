@@ -1,0 +1,78 @@
+# This is a sample build configuration for Javascript (Node.js).
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: interopion/ci-base-image:latest
+options:
+  docker: true
+
+pipelines:
+  branches:
+    develop:
+      # - step:
+      #     caches:
+      #       - node
+      #     script:
+      #       - . ./scripts/ci/ci-all-sonar-scan.sh
+      - step:
+          name: Deploy to DEV
+          deployment: dev
+          # trigger: manual
+          caches:
+            - pip
+            - node
+          script:
+            - . ./scripts/ci/ci-all-0-set-as-dev.sh
+            - . ./scripts/ci/ci-all-1-set-shared-env.sh
+            - . ./scripts/ci/ci-frontend-2-prepare-build-env.sh
+            - . ./scripts/ci/ci-frontend-3-build-docker-ecr.sh
+            - . ./scripts/ci/ci-frontend-4-aws-update-fargate.sh
+      - step:
+          name: Deploy to UAT
+          deployment: uat
+          trigger: manual
+          caches:
+            - pip
+            - node
+          script:
+            - . ./scripts/ci/ci-all-0-set-as-uat.sh
+            - . ./scripts/ci/ci-all-1-set-shared-env.sh
+            - . ./scripts/ci/ci-frontend-4-aws-update-fargate.sh
+      - step:
+          name: Create Release (this will cause the master branch to build and release to demo)
+          trigger: manual
+          script:
+            - . ./scripts/ci/ci-release-version.sh
+      - step:
+          name: Run dependency check
+          trigger: manual
+          script:
+            - . ./scripts/ci/ci-dependency-check.sh
+    master:
+      - step:
+          name: Deploy to Demo
+          deployment: demo
+          caches:
+            - pip
+          script:
+            - . ./scripts/ci/ci-all-0-set-as-demo.sh
+            - . ./scripts/ci/ci-all-1-set-shared-env.sh
+            - . ./scripts/ci/ci-frontend-4-aws-update-fargate.sh
+      - step:
+          name: Validated in IE11
+          trigger: manual
+          script:
+            - echo "Verified it was validated in IE11"
+      - step:
+          name: Deploy to Production
+          deployment: production
+          trigger: manual
+          caches:
+            - pip
+          script:
+            - . ./scripts/ci/ci-all-0-set-as-production.sh
+            - . ./scripts/ci/ci-all-1-set-shared-env.sh
+            - . ./scripts/ci/ci-frontend-2-prepare-build-env.sh
+            - . ./scripts/ci/ci-frontend-3-build-docker.sh
+            - . ./scripts/ci/ci-frontend-4-aws-update-fargate.sh

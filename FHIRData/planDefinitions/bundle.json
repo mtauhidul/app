@@ -1,0 +1,188 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "PlanDefinition",
+                "id": "cdiff",
+                "subjectCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "186431008"
+                        }
+                    ]
+                },
+                "action": [
+                    {
+                        "title": "C. diff toxin assay",
+                        "subjectCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "ServiceRequest"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "Isolation",
+                        "subjectCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "CommunicationRequest"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "Vancomycin",
+                        "subjectCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "MedicationRequest"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "PlanDefinition/cdiff"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "PlanDefinition",
+                "id": "uti",
+                "subjectCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "700372006"
+                        }
+                    ]
+                },
+                "action": [
+                    {
+                        "title": "Urinalysis",
+                        "subjectCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "ServiceRequest"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "Palpitate bladder",
+                        "subjectCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "ServiceRequest"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "Pain Management",
+                        "subjectCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "ServiceRequest"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "PlanDefinition/uti"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "PlanDefinition",
+                "id": "fall",
+                "subjectCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "1912002"
+                        }
+                    ]
+                },
+                "action": [
+                    {
+                        "title": "Decrease bed height",
+                        "subjectCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "Task"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "Monitor medications",
+                        "subjectCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "Task"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "PlanDefinition/fall"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "PlanDefinition",
+                "id": "generic",
+                "action": [
+                    {
+                        "title": "Blood Cultures",
+                        "subjectCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "ServiceRequest"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "Lactate",
+                        "subjectCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "ServiceRequest"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "Antibiotics",
+                        "subjectCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "MedicationRequest"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "PlanDefinition/generic"
+            }
+        }
+    ]
+}

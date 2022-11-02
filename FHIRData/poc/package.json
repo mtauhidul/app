@@ -1,0 +1,15 @@
+{
+  "name": "fhirdata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "load-sandbox.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "random-ext": "^2.7.1"
+  }
+}

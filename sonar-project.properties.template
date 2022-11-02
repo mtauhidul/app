@@ -1,0 +1,11 @@
+sonar.projectKey=quadrant-acquired-conditions
+sonar.projectName=quadrant-acquired-conditions
+
+sonar.sources=.
+sonar.tests=.
+sonar.test.inclusions=**/__test__/**
+sonar.language=ts
+sonar.profile=Sonar way
+sonar.exclusions= frontend/generateDefinitions.js, frontend/src/redux/reducers/fhir/sample-data.js, frontend/src/redux/reducers/fhir/sample-data.ts, pipelines.js, postcss.config.js, frontend/webpack.config.js, lib/@types/*.d.ts, lib/tests.js, lib/tests.ts, frontend/src/splashscreen/**, test_reports/coverage/**, **/__test__/**, node_modules/**, frontend/node_modules/** frontend/src/index.tsx frontend/src/index.jsx
+sonar.javascript.lcov.reportPaths=test_reports/coverage/lcov.info
+sonar.projectVersion=VERSION

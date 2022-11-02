@@ -1,0 +1,218 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "azy",
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/v2/0203",
+                                    "code": "MR",
+                                    "display": "Medical record number",
+                                    "userSelected": false
+                                }
+                            ],
+                            "text": "Medical record number"
+                        },
+                        "system": "http://hospital.smarthealthit.org",
+                        "value": "613876"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Adams",
+                        "given": [
+                            "Antonio",
+                            "B."
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1965-02-13"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/azy"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "azy-sepsis",
+                "subject": {
+                    "reference": "Patient/azy"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "91302008",
+                            "display": "Sepsis"
+                        }
+                    ],
+                    "text": "Sepsis"
+                },
+                "component": [
+                    {
+                        "valueQuantity": {
+                            "value": 20.67,
+                            "unit": "%",
+                            "code": "%"
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "310151004",
+                                    "display": "GI Surgery"
+                                }
+                            ],
+                            "text": "GI Surgery"
+                        }
+                    },
+                    {
+                        "valueQuantity": {
+                            "value": 11.66,
+                            "unit": "%",
+                            "code": "%"
+                        },
+                        "code": {
+                            "text": "Increase in WBC"
+                        }
+                    },
+                    {
+                        "valueQuantity": {
+                            "value": 10.07,
+                            "unit": "%",
+                            "code": "%"
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "386661006"
+                                }
+                            ],
+                            "text": "Fever over 38 C"
+                        }
+                    },
+                    {
+                        "valueQuantity": {
+                            "value": 7.42,
+                            "unit": "%",
+                            "code": "%"
+                        },
+                        "code": {
+                            "text": "Rigors"
+                        }
+                    },
+                    {
+                        "valueQuantity": {
+                            "value": 2.12,
+                            "unit": "%",
+                            "code": "%"
+                        },
+                        "code": {
+                            "text": "Another risk factor"
+                        }
+                    },
+                    {
+                        "valueQuantity": {
+                            "value": 1.06,
+                            "unit": "%",
+                            "code": "%"
+                        },
+                        "code": {
+                            "text": "One more risk factor"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/azy-sepsis"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "azy-fall",
+                "subject": {
+                    "reference": "Patient/azy"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "1912002",
+                            "display": "Fall"
+                        }
+                    ],
+                    "text": "Fall"
+                },
+                "component": [
+                    {
+                        "valueQuantity": {
+                            "value": 68.6,
+                            "unit": "%",
+                            "code": "%"
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26544005"
+                                }
+                            ],
+                            "text": "Reduced muscle strength"
+                        }
+                    },
+                    {
+                        "valueQuantity": {
+                            "value": 21.56,
+                            "unit": "%",
+                            "code": "%"
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "397540003"
+                                }
+                            ],
+                            "text": "Visual impairment"
+                        }
+                    },
+                    {
+                        "valueQuantity": {
+                            "value": 7.84,
+                            "unit": "%",
+                            "code": "%"
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "0000-last-factor"
+                                }
+                            ],
+                            "text": "Last risk factor"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/azy-fall"
+            }
+        }
+    ]
+}

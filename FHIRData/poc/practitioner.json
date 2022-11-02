@@ -1,0 +1,14 @@
+{
+    "resourceType": "Practitioner",
+    "id": "JOHN-EXAMPLE",
+    "active": false,
+    "name": [
+        {
+            "use": "usual",
+            "family": "Example",
+            "given": [
+                "John"
+            ]
+        }
+    ]
+}

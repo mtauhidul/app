@@ -1,0 +1,96 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "SMART-9995679-temperature-01",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "userSelected": false
+                            }
+                        ],
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "temperature",
+                            "userSelected": false
+                        }
+                    ],
+                    "text": "temperature"
+                },
+                "subject": {
+                    "reference": "Patient/SMART-9995679"
+                },
+                "effectiveDateTime": "2021-07-15",
+                "valueQuantity": {
+                    "value": 36.55556,
+                    "unit": "Cel",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/SMART-1288992"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "SMART-9995679-temperature-01",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "userSelected": false
+                            }
+                        ],
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "temperature",
+                            "userSelected": false
+                        }
+                    ],
+                    "text": "temperature"
+                },
+                "subject": {
+                    "reference": "Patient/SMART-9995679"
+                },
+                "effectiveDateTime": "2021-07-15",
+                "valueQuantity": {
+                    "value": 36.55556,
+                    "unit": "Cel",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/SMART-1288992"
+            }
+        }
+    ]
+}

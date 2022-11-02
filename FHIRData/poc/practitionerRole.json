@@ -1,0 +1,32 @@
+{
+    "resourceType": "PractitionerRole",
+    "id": "JOHN-EXAMPLE",
+    "practitioner": 
+    {
+        "reference": "Practitioner/JOHN-EXAMPLE"
+    },
+    "code": [
+        {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "33526004",
+                "display": "Electronic laboratory reporting"
+              }
+            ],
+            "text": "Care role"
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.15.111",
+                    "code": "01.011",
+                    "display": "Cardiothoracal surgery"
+                }
+            ],
+            "text": "specialization"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "color-main": "#000",
+    "color-main-background": "#EFEFEF",
+    "gap": "5px",
+    "grid-gap": "20px",
+    "break-width": "1024px",
+    "large-size-cuttoff": "1024px",
+    "mid-size-cutoff": "750px",
+    "min-size-cutoff": "400px"
+}

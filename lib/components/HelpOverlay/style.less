@@ -1,0 +1,28 @@
+ svg.overlay {
+     .touchbox {
+         transition: fill 250ms;
+         fill      : rgba(0, 0, 0, 0.1);
+         cursor    : help;
+         stroke    : #FFF;
+
+         &:hover {
+             stroke-width: 1px;
+             fill        : transparent;
+             filter      : drop-shadow(5px 5px 5px rgba(255, 255, 255, .99));
+         }
+     }
+
+     text {
+         fill       : #FFF;
+         font-family: "Kalam";
+         font-size  : 2em;
+     }
+
+     g.controls {
+         cursor: pointer;
+
+         &:hover {
+            filter      : drop-shadow(5px 5px 5px rgba(255, 255, 255, .99));
+         }
+     }
+ }

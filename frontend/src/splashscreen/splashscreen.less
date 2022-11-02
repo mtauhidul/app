@@ -1,0 +1,279 @@
+#progress-bar {
+    transition: width linear 0.25s;
+}
+
+.interopion-splashscreen {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    padding-top: 100px;
+    z-index: 10000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #334D5B;
+    background-blend-mode: multiply;
+}
+
+.interopion-splashscreen-app-name {
+    margin: 25px;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.fade-in {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.interopion-splashscreen-logo {
+    position: relative;
+    margin: 0 auto;
+    max-width: 220px;
+}
+
+.interopion-splashscreen-logo>img {
+    width: 100%;
+}
+
+.interopion-splashscreen-loading-list {
+    min-width: 300px;
+    padding: 0;
+    list-style-type: none;
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+    max-height: 50%;
+    overflow-y: auto;
+}
+
+.interopion-splashscreen-loading-item {
+    display: flex;
+}
+
+.interopion-splashscreen-trace-id {
+    display: flex;
+    margin-bottom: 3px;
+
+    .trace,.text {
+        margin: auto 0;
+        align-self: center;
+    }
+
+    .trace {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .trace-btn {
+        display: flex;
+        margin: 2px 7px;
+        cursor: pointer;
+        background: transparent;
+        border: 0px solid;
+        padding: 5px;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        svg {
+            margin: auto;
+            width: 15px;
+            height: 15px;
+        }
+
+        &:hover {
+            border-width: 1px;
+            margin: 1px 6px;
+        }
+        &:active {
+            border-width: 2px;
+            margin: 0px 5px;
+        }
+    }
+}
+
+.interopion-splashscreen-loading-item>.success {
+    width: 14px;
+    height: 14px;
+    margin: 2px 4px;
+    display: none;
+}
+
+.interopion-splashscreen-loading-item>.success:before {
+    content: '✔';
+    color: green;
+}
+
+.interopion-splashscreen-loading-item>.error {
+    color: rgb(213, 43, 30);
+    width: 14px;
+    height: 14px;
+    margin: 3px 4px;
+    display: none;
+    position: relative;
+}
+
+.interopion-splashscreen-loading-item>.error:before,
+.error:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    height: 3px;
+    margin-top: -1px;
+    background-color: rgb(213, 43, 30);
+}
+
+.interopion-splashscreen-loading-item>.error:before {
+    transform: rotate(45deg);
+}
+
+.interopion-splashscreen-loading-item>.error:after {
+    transform: rotate(-45deg);
+}
+
+.error-text {
+    font-family: monospace;
+    margin: 50px 25px;
+    background-color: rgba(230, 111, 111, 0.57);
+    padding: 25px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+
+.item-spinner {
+    width: 14px;
+    height: 14px;
+    margin: auto 4px;
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0)
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+.interopion-splashscreen>.spinner {
+    margin: 10px auto 0;
+    width: 90px;
+    text-align: center;
+}
+
+.interopion-splashscreen>.spinner>div {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.interopion-splashscreen>.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.interopion-splashscreen>.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+.interopion-splashscreen .launch-button {
+    align-items:center;
+    color:rgb(255, 255, 255);
+    cursor:pointer;
+    display:flex;
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size:14px;
+    font-stretch:100%;
+    font-weight:500;
+    padding: 6px 16px;
+    border-radius: 4px;
+    background: #E43935;
+    transition: background 300ms;
+}
+
+.interopion-splashscreen .launch-button:hover {
+    background: hsl(1, 76%, 45%);
+}
+
+.fade-in-show {
+    transition: opacity 250ms;
+}
+.fade-in-hide {
+    opacity: 0;
+}
+.fade-out-show {
+    opacity: 1;
+}
+.fade-out-hide {
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

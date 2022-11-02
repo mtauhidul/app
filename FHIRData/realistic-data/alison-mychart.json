@@ -1,0 +1,1943 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "eJzlzKe3KPzAV5TtkxmNivQ3",
+                "extension": [
+                    {
+                        "extension": [
+                            {
+                                "valueCoding": {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                                    "code": "UNK",
+                                    "display": "Unknown"
+                                },
+                                "url": "ombCategory"
+                            },
+                            {
+                                "url": "text"
+                            }
+                        ],
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "valueCoding": {
+                                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                                    "code": "2186-5",
+                                    "display": "Not Hispanic or Latino"
+                                },
+                                "url": "ombCategory"
+                            },
+                            {
+                                "valueString": "Not Hispanic or Latino",
+                                "url": "text"
+                            }
+                        ],
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+                    },
+                    {
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000",
+                                    "code": "female",
+                                    "display": "female"
+                                }
+                            ]
+                        },
+                        "url": "http://open.epic.com/FHIR/StructureDefinition/extension/legal-sex"
+                    },
+                    {
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/gender-identity",
+                                    "code": "transgender-female",
+                                    "display": "transgender-female"
+                                }
+                            ]
+                        },
+                        "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity"
+                    },
+                    {
+                        "valueCode": "F",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "system": "urn:oid:2.16.840.1.113883.4.1",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "valueString": "xxx-xx-5316",
+                                    "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "use": "usual",
+                        "type": {
+                            "text": "CEID"
+                        },
+                        "system": "urn:epic:apporchard.curprod",
+                        "value": "AO16N3K0VX5J6HC"
+                    },
+                    {
+                        "use": "usual",
+                        "type": {
+                            "text": "EPIC"
+                        },
+                        "system": "urn:oid:1.2.840.114350.1.1",
+                        "value": "E2731"
+                    },
+                    {
+                        "use": "usual",
+                        "type": {
+                            "text": "EXTERNAL"
+                        },
+                        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.698084",
+                        "value": "Z4572"
+                    },
+                    {
+                        "use": "usual",
+                        "type": {
+                            "text": "FHIR"
+                        },
+                        "system": "http://open.epic.com/FHIR/StructureDefinition/patient-dstu2-fhir-id",
+                        "value": "TJgJ7wgwgI32QvHx3YBhDm4egjwdyhmAhfdtE7bQsPYYB"
+                    },
+                    {
+                        "use": "usual",
+                        "type": {
+                            "text": "FHIR STU3"
+                        },
+                        "system": "http://open.epic.com/FHIR/StructureDefinition/patient-fhir-id",
+                        "value": "eJzlzKe3KPzAV5TtkxmNivQ3"
+                    },
+                    {
+                        "use": "usual",
+                        "type": {
+                            "text": "INTERNAL"
+                        },
+                        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.698084",
+                        "value": "     Z4572"
+                    },
+                    {
+                        "use": "usual",
+                        "type": {
+                            "text": "MRN"
+                        },
+                        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.14",
+                        "value": "202497"
+                    },
+                    {
+                        "use": "usual",
+                        "type": {
+                            "text": "MYCHARTLOGIN"
+                        },
+                        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.878082.110",
+                        "value": "MYCHARTALLISON"
+                    },
+                    {
+                        "use": "usual",
+                        "type": {
+                            "text": "FFH OID"
+                        },
+                        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.247",
+                        "value": "MEDAVAILTEST"
+                    },
+                    {
+                        "use": "usual",
+                        "type": {
+                            "text": "WPRINTERNAL"
+                        },
+                        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.878082",
+                        "value": "16"
+                    },
+                    {
+                        "use": "usual",
+                        "system": "https://open.epic.com/FHIR/StructureDefinition/PayerMemberId",
+                        "value": "987654321A"
+                    },
+                    {
+                        "use": "usual",
+                        "system": "https://open.epic.com/FHIR/StructureDefinition/PayerMemberId",
+                        "value": "BC654"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "use": "old",
+                        "text": "MYCHART,ALI",
+                        "family": "Mychart",
+                        "given": [
+                            "Ali"
+                        ]
+                    },
+                    {
+                        "use": "official",
+                        "text": "Allison Mychart",
+                        "family": "Mychart",
+                        "given": [
+                            "Allison"
+                        ]
+                    },
+                    {
+                        "use": "usual",
+                        "text": "Ali Mychart",
+                        "family": "Mychart",
+                        "given": [
+                            "Ali"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "608-123-4567",
+                        "use": "home"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1987-01-15",
+                "deceasedBoolean": false,
+                "address": [
+                    {
+                        "use": "old",
+                        "line": [
+                            "123 Main St."
+                        ],
+                        "city": "Madison",
+                        "state": "WI",
+                        "postalCode": "53703",
+                        "country": "US"
+                    },
+                    {
+                        "use": "home",
+                        "line": [
+                            "123 Main St."
+                        ],
+                        "city": "Madison",
+                        "state": "WI",
+                        "postalCode": "53703",
+                        "country": "US"
+                    }
+                ],
+                "maritalStatus": {
+                    "text": "Significant Other"
+                },
+                "communication": [
+                    {
+                        "language": {
+                            "coding": [
+                                {
+                                    "system": "urn:ietf:bcp:47",
+                                    "code": "en",
+                                    "display": "English"
+                                }
+                            ],
+                            "text": "English"
+                        },
+                        "preferred": true
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "eChQNShe9AMGUBUhrIYCQG6-L8hiw4poXvX13BfFrCVY3",
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+                        "value": "1091318"
+                    }
+                ],
+                "status": "active",
+                "intent": "order",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                                "code": "community",
+                                "display": "Community"
+                            }
+                        ],
+                        "text": "Community"
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "encounter": {
+                    "identifier": {
+                        "use": "usual",
+                        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                        "value": "31596"
+                    },
+                    "display": "Appointment"
+                },
+                "authoredOn": "2021-05-28",
+                "courseOfTherapyType": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                            "code": "continuous",
+                            "display": "Continuous long term therapy"
+                        }
+                    ],
+                    "text": "Continuous long term therapy"
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "Take 1 tablet (125 mg total) by mouth 2 (two) times a day., Starting Fri 5/28/2021, Until Sun 6/27/2021, Normal",
+                        "patientInstruction": "Take 1 tablet (125 mg total) by mouth 2 (two) times a day.",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2021-05-28"
+                                },
+                                "count": 60,
+                                "timeOfDay": [
+                                    "09:00:00",
+                                    "18:00:00"
+                                ]
+                            },
+                            "code": {
+                                "text": "0900, 1800"
+                            }
+                        },
+                        "asNeededBoolean": false,
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "260548002",
+                                    "display": "Oral (qualifier value)"
+                                },
+                                {
+                                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025",
+                                    "code": "15",
+                                    "display": "Oral"
+                                }
+                            ],
+                            "text": "Oral"
+                        },
+                        "method": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "419652001",
+                                    "display": "Take"
+                                }
+                            ],
+                            "text": "Take"
+                        },
+                        "doseAndRate": [
+                            {
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://epic.com/CodeSystem/dose-rate-type",
+                                            "code": "calculated",
+                                            "display": "calculated"
+                                        }
+                                    ],
+                                    "text": "calculated"
+                                },
+                                "doseQuantity": {
+                                    "value": 125,
+                                    "unit": "mg",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "mg"
+                                }
+                            },
+                            {
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://epic.com/CodeSystem/dose-rate-type",
+                                            "code": "admin-amount",
+                                            "display": "admin-amount"
+                                        }
+                                    ],
+                                    "text": "admin-amount"
+                                },
+                                "doseQuantity": {
+                                    "value": 1,
+                                    "unit": "tablet",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "{tbl}"
+                                }
+                            },
+                            {
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://epic.com/CodeSystem/dose-rate-type",
+                                            "code": "ordered",
+                                            "display": "ordered"
+                                        }
+                                    ],
+                                    "text": "ordered"
+                                },
+                                "doseQuantity": {
+                                    "value": 125,
+                                    "unit": "mg",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "mg"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "dispenseRequest": {
+                    "validityPeriod": {
+                        "start": "2021-05-28"
+                    },
+                    "numberOfRepeatsAllowed": 0,
+                    "quantity": {
+                        "value": 60,
+                        "unit": "tablet"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "unit": "Day",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                },
+                "medicationReference": {
+                    "reference": "Medication/acetaZOLAMIDE",
+                    "display": "acetaZOLAMIDE (DIAMOX) tablet"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/eChQNShe9AMGUBUhrIYCQG6-L8hiw4poXvX13BfFrCVY3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Medication",
+                "id": "acetaZOLAMIDE",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.253",
+                            "code": "313"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.68",
+                            "code": "37100010000305"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.162",
+                            "code": "01339"
+                        },
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "167"
+                        },
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "197303"
+                        }
+                    ],
+                    "text": "acetaZOLAMIDE (DIAMOX) tablet"
+                },
+                "form": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.698288.310",
+                            "code": "TABS",
+                            "display": "tablet"
+                        }
+                    ],
+                    "text": "tablet"
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.6.253",
+                                    "code": "313"
+                                },
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.6.68",
+                                    "code": "37100010000305"
+                                },
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.6.162",
+                                    "code": "01339"
+                                },
+                                {
+                                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                                    "code": "167"
+                                },
+                                {
+                                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                                    "code": "197303"
+                                }
+                            ],
+                            "text": "acetaZOLAMIDE (DIAMOX) tablet"
+                        },
+                        "strength": {
+                            "numerator": {
+                                "value": 125,
+                                "unit": "MG",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "mg"
+                            },
+                            "denominator": {
+                                "value": 125,
+                                "unit": "MG",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "mg"
+                            }
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Medication/acetaZOLAMIDE"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "e87YEGaxdJIX7pET6WC8JDA3",
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "version": "4.0.0",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "version": "4.0.0",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ],
+                        "text": "Problem List Item"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.90",
+                            "code": "A83.2"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.96",
+                            "code": "416925005"
+                        }
+                    ],
+                    "text": "EEE (Eastern equine encephalitis)"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "onsetPeriod": {
+                    "start": "2020-01-31",
+                    "end": "2020-01-31"
+                },
+                "recordedDate": "2020-01-31"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/e87YEGaxdJIX7pET6WC8JDA3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "e-aU60UwzgpgC.EchvtudZg3",
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "version": "4.0.0",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "version": "4.0.0",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ],
+                        "text": "Problem List Item"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.90",
+                            "code": "A83.2"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.96",
+                            "code": "416925005"
+                        }
+                    ],
+                    "text": "Equine encephalitis, Eastern (EEE)"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "onsetPeriod": {
+                    "start": "2020-01-31",
+                    "end": "2020-01-31"
+                },
+                "recordedDate": "2020-01-31"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/e-aU60UwzgpgC.EchvtudZg3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "ePyAl7-GM0BRyUCOtWpXZ1A3",
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "version": "4.0.0",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "version": "4.0.0",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ],
+                        "text": "Problem List Item"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.90",
+                            "code": "E10.39"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.96",
+                            "code": "46635009"
+                        }
+                    ],
+                    "text": "Type 1 diabetes mellitus with ophthalmic complication (CMS/HCC)"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "onsetPeriod": {
+                    "start": "2020-01-31",
+                    "end": "2020-01-31"
+                },
+                "recordedDate": "2020-01-31"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/ePyAl7-GM0BRyUCOtWpXZ1A3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "evz8mVqsc0624MdS7ii8s7Q3",
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "version": "4.0.0",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "version": "4.0.0",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ],
+                        "text": "Problem List Item"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.90",
+                            "code": "O24.019"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.96",
+                            "code": "199227004"
+                        }
+                    ],
+                    "text": "Type 1 diabetes mellitus complicating pregnancy, antepartum"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "onsetPeriod": {
+                    "start": "2020-01-31",
+                    "end": "2020-01-31"
+                },
+                "recordedDate": "2020-01-31"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/evz8mVqsc0624MdS7ii8s7Q3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "e.2Ou3vEhf9DW7DVqpRkFHg3",
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "version": "4.0.0",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "version": "4.0.0",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ],
+                        "text": "Problem List Item"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.90",
+                            "code": "R50.9"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.96",
+                            "code": "386661006"
+                        }
+                    ],
+                    "text": "Fever"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "onsetPeriod": {
+                    "start": "2021-05-28",
+                    "end": "2021-05-28"
+                },
+                "recordedDate": "2021-05-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/e.2Ou3vEhf9DW7DVqpRkFHg3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "pVZezQSr7ePrZ2Hh0ylZRt5Lkt0KUWGlKylmvJwK2w3OvN2DWlk8V7C9Il3",
+                "extension": [
+                    {
+                        "valueQuantity": {
+                            "value": 98.7,
+                            "unit": "[degF]",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "[degF]"
+                        },
+                        "url": "http://open.epic.com/FHIR/STU3/StructureDefinition/temperature-in-fahrenheit"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ],
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.707679",
+                            "code": "6",
+                            "display": "Temp"
+                        },
+                        {
+                            "system": "http://open.epic.com/FHIR/StructureDefinition/observation-flowsheet-id",
+                            "code": "tvdinindxnlKvaoAecyilRA0",
+                            "display": "Temp"
+                        },
+                        {
+                            "system": "urn:oid:1.2.246.537.6.96",
+                            "code": "8310-5"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8716-3",
+                            "display": "Vital signs"
+                        }
+                    ],
+                    "text": "Temp"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "effectiveDateTime": "2019-11-12T21:49:00Z",
+                "issued": "2019-11-12T21:50:12Z",
+                "valueQuantity": {
+                    "value": 37.1,
+                    "unit": "Cel",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/pVZezQSr7ePrZ2Hh0ylZRt5Lkt0KUWGlKylmvJwK2w3OvN2DWlk8V7C9Il3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "VZezQSr7ePrZ2Hh0ylZRt5Lkt0KUWGlKylmvjk2qxJP2kN9KKm2BTatYS3",
+                "extension": [
+                    {
+                        "valueQuantity": {
+                            "value": 98.5,
+                            "unit": "[degF]",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "[degF]"
+                        },
+                        "url": "http://open.epic.com/FHIR/STU3/StructureDefinition/temperature-in-fahrenheit"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ],
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.707679",
+                            "code": "6",
+                            "display": "Temp"
+                        },
+                        {
+                            "system": "http://open.epic.com/FHIR/StructureDefinition/observation-flowsheet-id",
+                            "code": "tvdinindxnlKvaoAecyilRA0",
+                            "display": "Temp"
+                        },
+                        {
+                            "system": "urn:oid:1.2.246.537.6.96",
+                            "code": "8310-5"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8716-3",
+                            "display": "Vital signs"
+                        }
+                    ],
+                    "text": "Temp"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "effectiveDateTime": "2019-07-30T19:19:00Z",
+                "issued": "2019-11-12T20:19:54Z",
+                "valueQuantity": {
+                    "value": 36.9,
+                    "unit": "Cel",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/VZezQSr7ePrZ2Hh0ylZRt5Lkt0KUWGlKylmvjk2qxJP2kN9KKm2BTatYS3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "r7ePrZ2HpSnXOwf6wqRb7gxWzH2IPipMSQSq94FaHQWECTRdZs3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ],
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.707679",
+                            "code": "8",
+                            "display": "Pulse"
+                        },
+                        {
+                            "system": "http://open.epic.com/FHIR/StructureDefinition/observation-flowsheet-id",
+                            "code": "t0nle2B9NVDaJJUDo0FtQrA0",
+                            "display": "Pulse"
+                        },
+                        {
+                            "system": "urn:oid:1.2.246.537.6.96",
+                            "code": "8867-4"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8716-3",
+                            "display": "Vital signs"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ],
+                    "text": "Pulse"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "effectiveDateTime": "2019-11-12T21:49:00Z",
+                "issued": "2019-11-12T21:50:12Z",
+                "valueQuantity": {
+                    "value": 80,
+                    "unit": "/min",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/min"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/r7ePrZ2HpSnXOwf6wqRb7gxWzH2IPipMSQSq94FaHQWECTRdZs3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "QSr7ePrZ2HpSnXOwf6wqRb7gxWzH2INCn57m4EnalostBp7WKU3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ],
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.707679",
+                            "code": "8",
+                            "display": "Pulse"
+                        },
+                        {
+                            "system": "http://open.epic.com/FHIR/StructureDefinition/observation-flowsheet-id",
+                            "code": "t0nle2B9NVDaJJUDo0FtQrA0",
+                            "display": "Pulse"
+                        },
+                        {
+                            "system": "urn:oid:1.2.246.537.6.96",
+                            "code": "8867-4"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8716-3",
+                            "display": "Vital signs"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ],
+                    "text": "Pulse"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "effectiveDateTime": "2019-07-30T19:19:00Z",
+                "issued": "2019-11-12T20:19:54Z",
+                "valueQuantity": {
+                    "value": 75,
+                    "unit": "/min",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/min"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/QSr7ePrZ2HpSnXOwf6wqRb7gxWzH2INCn57m4EnalostBp7WKU3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "Sr7ePrZ2Ht1vpScGQFiHGit8a6N4Kgu6txJKaT7c720Yn0ZIdPDV3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ],
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.707679",
+                            "code": "11",
+                            "display": "Height"
+                        },
+                        {
+                            "system": "http://open.epic.com/FHIR/StructureDefinition/observation-flowsheet-id",
+                            "code": "tkgg8UmEMvovrM.sHkZKrAQ0",
+                            "display": "Height"
+                        },
+                        {
+                            "system": "urn:oid:1.2.246.537.6.96",
+                            "code": "8302-2"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8302-2",
+                            "display": "Body height"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8716-3",
+                            "display": "Vital signs"
+                        }
+                    ],
+                    "text": "Height"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "effectiveDateTime": "2019-11-12T21:49:00Z",
+                "issued": "2019-11-12T21:50:30Z",
+                "valueQuantity": {
+                    "value": 180,
+                    "unit": "cm",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/Sr7ePrZ2Ht1vpScGQFiHGit8a6N4Kgu6txJKaT7c720Yn0ZIdPDV3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "QSr7ePrZ2Ht1vpScGQFiHGit8a6N4Kgu2NO8W50yEEpO9a5mV2",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ],
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.707679",
+                            "code": "11",
+                            "display": "Height"
+                        },
+                        {
+                            "system": "http://open.epic.com/FHIR/StructureDefinition/observation-flowsheet-id",
+                            "code": "tkgg8UmEMvovrM.sHkZKrAQ0",
+                            "display": "Height"
+                        },
+                        {
+                            "system": "urn:oid:1.2.246.537.6.96",
+                            "code": "8302-2"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8302-2",
+                            "display": "Body height"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8716-3",
+                            "display": "Vital signs"
+                        }
+                    ],
+                    "text": "Height"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "effectiveDateTime": "2019-07-30T19:19:00Z",
+                "issued": "2019-11-12T20:19:54Z",
+                "valueQuantity": {
+                    "value": 180.3,
+                    "unit": "cm",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/QSr7ePrZ2Ht1vpScGQFiHGit8a6N4Kgu2NO8W50yEEpO9a5mV2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "r7ePrZ2HjJLcAEfrbVaZME0L4ZieGfzf3uuaFHJctJgCgGG3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ],
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.707679",
+                            "code": "14",
+                            "display": "Weight"
+                        },
+                        {
+                            "system": "http://open.epic.com/FHIR/StructureDefinition/observation-flowsheet-id",
+                            "code": "tX9rE8TgbEPXWpgEX7kuaoQ0",
+                            "display": "Weight"
+                        },
+                        {
+                            "system": "urn:oid:1.2.246.537.6.96",
+                            "code": "29463-7"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "29463-7",
+                            "display": "Body weight"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "3141-9",
+                            "display": "Body weight Measured"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8716-3",
+                            "display": "Vital signs"
+                        }
+                    ],
+                    "text": "Weight"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "effectiveDateTime": "2019-11-12T21:49:00Z",
+                "issued": "2019-11-12T21:50:22Z",
+                "valueQuantity": {
+                    "value": 66,
+                    "unit": "kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/r7ePrZ2HjJLcAEfrbVaZME0L4ZieGfzf3uuaFHJctJgCgGG3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "r7ePrZ2HjJLcAEfrbVaZME0L4Zic42rJDyntEr2uKgzeUH9s3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ],
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.707679",
+                            "code": "14",
+                            "display": "Weight"
+                        },
+                        {
+                            "system": "http://open.epic.com/FHIR/StructureDefinition/observation-flowsheet-id",
+                            "code": "tX9rE8TgbEPXWpgEX7kuaoQ0",
+                            "display": "Weight"
+                        },
+                        {
+                            "system": "urn:oid:1.2.246.537.6.96",
+                            "code": "29463-7"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "29463-7",
+                            "display": "Body weight"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "3141-9",
+                            "display": "Body weight Measured"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8716-3",
+                            "display": "Vital signs"
+                        }
+                    ],
+                    "text": "Weight"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "effectiveDateTime": "2019-07-30T19:19:00Z",
+                "issued": "2019-11-12T20:19:54Z",
+                "valueQuantity": {
+                    "value": 65.8,
+                    "unit": "kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/r7ePrZ2HjJLcAEfrbVaZME0L4Zic42rJDyntEr2uKgzeUH9s3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "7ePrZ2HjJLcAEfrbVaZME0L4ZidB17bTPePaAANMDmCKpCf3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ],
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.707679",
+                            "code": "14",
+                            "display": "Weight"
+                        },
+                        {
+                            "system": "http://open.epic.com/FHIR/StructureDefinition/observation-flowsheet-id",
+                            "code": "tX9rE8TgbEPXWpgEX7kuaoQ0",
+                            "display": "Weight"
+                        },
+                        {
+                            "system": "urn:oid:1.2.246.537.6.96",
+                            "code": "29463-7"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "29463-7",
+                            "display": "Body weight"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "3141-9",
+                            "display": "Body weight Measured"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8716-3",
+                            "display": "Vital signs"
+                        }
+                    ],
+                    "text": "Weight"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "effectiveDateTime": "2019-07-29T12:30:00Z",
+                "issued": "2022-05-17T23:06:11Z",
+                "valueQuantity": {
+                    "value": 65,
+                    "unit": "kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/7ePrZ2HjJLcAEfrbVaZME0L4ZidB17bTPePaAANMDmCKpCf3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "vd0pKtJ56ZnLKWdmbi8eA9pi2OHzsiVqzoPEcWqpGNSrbxh2z3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "social-history",
+                                "display": "Social History"
+                            }
+                        ],
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "365980008",
+                            "display": "Finding of tobacco use and exposure (finding)"
+                        }
+                    ],
+                    "text": "Smoking History"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "issued": "2019-11-08T06:00:00Z",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "449868002",
+                            "display": "Smokes tobacco daily"
+                        }
+                    ],
+                    "text": "Every Day"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "81228-9",
+                                    "display": "Tobacco product"
+                                },
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "53661000146106",
+                                    "display": "Type of tobacco used (observable entity)"
+                                }
+                            ],
+                            "text": "Type"
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "65568007",
+                                    "display": "Cigarette Smoker"
+                                }
+                            ],
+                            "text": "Cigarettes"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "401201003",
+                                    "display": "Cigarette pack-years (observable entity)"
+                                }
+                            ],
+                            "text": "Cigarette pack-years (observable entity)"
+                        },
+                        "valueQuantity": {
+                            "value": 0,
+                            "unit": "{PackYears}",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "{PackYears}"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "88029-4",
+                                    "display": "Tobacco use duration"
+                                }
+                            ],
+                            "text": "Years Used"
+                        },
+                        "valueQuantity": {
+                            "value": 0,
+                            "unit": "Years Used",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "a"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8663-7",
+                                    "display": "Cigarettes smoked current (pack per day) - Reported"
+                                },
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "266918002",
+                                    "display": "Tobacco smoking consumption (observable entity)"
+                                }
+                            ],
+                            "text": "Packs/Day"
+                        },
+                        "valueQuantity": {
+                            "value": 1,
+                            "unit": "Packs/Day",
+                            "system": "http://snomed.info/sct",
+                            "code": "228963008"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/vd0pKtJ56ZnLKWdmbi8eA9pi2OHzsiVqzoPEcWqpGNSrbxh2z3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "0pKtJ7YLsVX02myIArHNWUSUiqNYjunggufW2h2kdabbZnco3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "social-history",
+                                "display": "Social History"
+                            }
+                        ],
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "11331-6",
+                            "display": "Alcohol Use History"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "228273003",
+                            "display": "Finding relating to alcohol drinking behavior (finding)"
+                        }
+                    ],
+                    "text": "Alcohol Use History"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "issued": "2021-08-05T05:00:00Z",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "219006",
+                            "display": "Current drinker of alcohol (finding)"
+                        }
+                    ],
+                    "text": "Yes"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/0pKtJ7YLsVX02myIArHNWUSUiqNYjunggufW2h2kdabbZnco3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "0pKtJ4IcoBrGGIXzHdTkhvnmN1Tb2g2GKeLBNsaIHi7MNvk3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "social-history",
+                                "display": "Social History"
+                            }
+                        ],
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "11343-1",
+                            "display": "Drug Use History"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "228366006",
+                            "display": "Finding relating to drug misuse behavior (finding)"
+                        }
+                    ],
+                    "text": "Drug Use History"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "issued": "2021-08-05T05:00:00Z",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "44870007",
+                            "display": "Misused drugs in past (finding)"
+                        }
+                    ],
+                    "text": "Not Currently"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/0pKtJ4IcoBrGGIXzHdTkhvnmN1Tb2g2GKeLBNsaIHi7MNvk3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "Xur6Kp3eW3WblSCBRNaRrybFMcMbl7kVKS4UOJSXIJoqdbrU",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "social-history",
+                                "display": "Social History"
+                            }
+                        ],
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "82810-3",
+                            "display": "Pregnancy status"
+                        }
+                    ],
+                    "text": "Pregnancy status"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "effectiveDateTime": "2020-04-17",
+                "issued": "2020-04-29T18:30:58Z",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "373067005",
+                            "display": "No"
+                        }
+                    ],
+                    "text": "No"
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "Observation/p3JdJHZcKtqP9zIgmCeMbEgmRwlup4YDnXv5Gd2iB33",
+                        "display": "Menstrual status"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/Xur6Kp3eW3WblSCBRNaRrybFMcMbl7kVKS4UOJSXIJoqdbrU"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "p3JdJHZcKtqP9zIgmCeMbEgmRwlup4YDnXv5Gd2iB33",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "social-history",
+                                "display": "Social History"
+                            }
+                        ],
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "3146-8",
+                            "display": "Menstrual status"
+                        }
+                    ],
+                    "text": "Menstrual status"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "effectiveDateTime": "2020-04-17",
+                "issued": "2020-04-29T18:30:58Z",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.698084.18940",
+                            "code": "14",
+                            "display": "Born without uterus"
+                        }
+                    ],
+                    "text": "Born without uterus"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/p3JdJHZcKtqP9zIgmCeMbEgmRwlup4YDnXv5Gd2iB33"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "zFXur6Kp1gbLV8O1gfQhCJns3DuqxUiokXhmXNor02WMBXRoKb3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "social-history",
+                                "display": "Social History"
+                            }
+                        ],
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "63895-7",
+                            "display": "Breastfeeding status"
+                        }
+                    ],
+                    "text": "Lactation status"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "issued": "2020-04-29T18:30:58Z",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "373067005",
+                            "display": "No"
+                        }
+                    ],
+                    "text": "No"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/zFXur6Kp1gbLV8O1gfQhCJns3DuqxUiokXhmXNor02WMBXRoKb3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "e4xnqBgnSS0nDvzFXur6Kp.B0np1NMFBVibktdbG3rTw3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "social-history",
+                                "display": "Social History"
+                            }
+                        ],
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "32486-3",
+                            "display": "Physical findings of Uterus"
+                        }
+                    ],
+                    "text": "Physical findings of Uterus"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "valueBoolean": false
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/e4xnqBgnSS0nDvzFXur6Kp.B0np1NMFBVibktdbG3rTw3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "e4xnqBgnSS0nDvzFXur6KpyryJc09GOlKFG9aK4itd5k3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "social-history",
+                                "display": "Social History"
+                            }
+                        ],
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "29762-2",
+                            "display": "Social Documentation"
+                        }
+                    ],
+                    "text": "Social Documentation"
+                },
+                "subject": {
+                    "reference": "Patient/eJzlzKe3KPzAV5TtkxmNivQ3",
+                    "display": "Mychart, Ali"
+                },
+                "valueString": "test"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/e4xnqBgnSS0nDvzFXur6KpyryJc09GOlKFG9aK4itd5k3"
+            }
+        }
+    ]
+}

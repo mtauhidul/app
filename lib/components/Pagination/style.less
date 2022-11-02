@@ -1,0 +1,44 @@
+#paginaton-button {
+    padding: 10px 8px;
+    font-size: 1em;
+}
+
+.pagination-menu-container {
+    flex-direction: column;
+    display: flex;
+    width: 275px;
+    padding: 5px;
+    
+    .pagination-size {
+        display: flex;
+    }
+
+    .pagination-menu-page-text {
+        flex-grow: 1;
+        margin: auto 0;
+    }
+    .pagination-menu-page-size-selector {
+        width: 125px;
+    }
+    .pagination-menu-page-selector-container {
+        margin: 0 auto;
+        flex-wrap: wrap;
+        display: flex;
+        .pagination-select-additional {
+            width: 20px;
+            .MuiSvgIcon-root.MuiSelect-icon {
+                width: 22px;
+            }
+            .MuiSelect-select.MuiSelect-select {
+                margin-left: 3px;
+                margin-right: 3px;
+            }
+        }
+        .pagination-select-button {
+            font-size: 1em;
+            padding: 5px;
+            width: 28px;
+            flex-grow: 1;
+        }
+    }
+}
